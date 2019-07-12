@@ -1,6 +1,4 @@
-# Twitch IRC Rate Limiting
-
-Last updated 2019-06-30
+# tmi-rate-limits: Twitch IRC Rate Limiting
 
 ## Commands overview
 
