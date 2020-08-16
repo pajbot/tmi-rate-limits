@@ -44,7 +44,7 @@ On the client, you do not know when these buckets refill. Therefore it is probab
 
 A typical implementation might be to have a semaphore that is initialized with the bucket size. When sending a command, you remove a token from the semaphore, and after you are done successfully sending the message, you start a timer/sleep for the refill time, and refill the semaphore after that time.
 
-See for example (my implementation): https://github.com/robotty/dank-twitch-irc/blob/master/lib/client/ratelimiters/privmsg.ts
+See for example (my implementation): https://github.com/robotty/dank-twitch-irc/blob/master/lib/mixins/ratelimiters/privmsg.ts
 
 ### `privmsg-bucket`
 
