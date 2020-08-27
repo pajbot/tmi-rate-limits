@@ -38,7 +38,7 @@ These commands each count towards the following buckets:
 
 ## Rate Limit Buckets:
 
-Twitch IRC uses rate limit buckets, [according to staff][forum1].
+Twitch IRC uses rate limit buckets, [according to staff][forum1]. A rate limit bucket in this case means that for every user, Twitch keeps a number of remaining requests. A request uses up a token from the bucket. If there is an incoming request, and the bucket is at 0, then the request is denied/fails. The bucket is reset to its original amount (the refill amount, e.g. 100) on a fixed schedule: the refill rate (e.g. every 30 seconds).
 
 On the client, you do not know when these buckets refill. Therefore it is probably smart to implement a sliding-window rate limiter with the bucket parameters - which is a type of implementation where you assume the bucket refilled exactly at `tNow - refillRate` - so you at no point in time ever could possibly exceed the rate limit.
 
