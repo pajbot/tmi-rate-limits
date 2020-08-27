@@ -40,7 +40,7 @@ These commands each count towards the following buckets:
 
 Twitch IRC uses rate limit buckets, [according to staff][forum1].
 
-On the client, you do not know when these buckets refill. Therefore it is probably smart to implement a sliding-window rate limiter with the bucket parameters - which is a type of implementation where you assume the bucket refilled exactly at `tNow - refillRate` - so you at no point in time ever could possible exceed the rate limit.
+On the client, you do not know when these buckets refill. Therefore it is probably smart to implement a sliding-window rate limiter with the bucket parameters - which is a type of implementation where you assume the bucket refilled exactly at `tNow - refillRate` - so you at no point in time ever could possibly exceed the rate limit.
 
 A typical implementation might be to have a semaphore that is initialized with the bucket size. When sending a command, you remove a token from the semaphore, and after you are done successfully sending the message, you start a timer/sleep for the refill time, and refill the semaphore after that time.
 
