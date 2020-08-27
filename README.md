@@ -120,7 +120,7 @@ i.e. it responds to you with the `PONG` command and the IRC message arguments `[
 
   - Twitch limits the speed of really fast chats by dropping messages if they exceed a per-channel rate limit bucket of unknown refill rate and unknown refill amount.
     If you send a message while this bucket is drained, your message is not delivered to chat (it is dropped).
-    Moderators, VIPs and Broadcasters are exempt from this.
+    Moderators, VIPs, Broadcasters and Verified Bots are exempt from this.
   - Twitch will drop messages it considers too repetetive, for example 500x "a" will get dropped silently.
     Moderators, VIPs and Broadcasters are exempt from this.
   - Twitch will drop a message if it is equal to "**the last one you sent, less than 30 seconds ago**" (this restriction is per-channel). If your intention is to send such a repeating message, you can append `" \u{E0000}"` to duplicate messages to be able to send the same message again.
