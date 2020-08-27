@@ -141,7 +141,7 @@ i.e. it responds to you with the `PONG` command and the IRC message arguments `[
 
         @msg-id=msg_slowmode :tmi.twitch.tv NOTICE #randers00 :This room is in slow mode and you are sending messages too quickly. You will be able to talk again in 4 seconds.
         
-    In some chats, subscribers can be exempt from the channel-specific slowmode. (This is a channel-specific setting the broadcaster can make. You can view this info on https://www.twitch.tv/subscriptions, "Exempt from slow-mode" will be listed as the subscriber perks when you show the details about a subscription you have. The data is also available via `https://api.twitch.tv/api/channels/:channelName/product`)
+    In some chats, subscribers can be exempt from the channel-specific slowmode. (This is a channel-specific setting the broadcaster can make. You can view this info on https://www.twitch.tv/subscriptions, "Exempt from slow-mode" will be listed as the subscriber perks when you show the details about a subscription you have. The data is not available on any public Twitch API.
 
   - Timeouts and Bans: If you are timed out or banned your PRIVMSGs will get dropped, obviously.
     Permanent ban:
