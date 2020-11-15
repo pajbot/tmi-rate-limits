@@ -59,7 +59,7 @@ If your account does not have any of these statuses, the given PRIVMSG uses a to
   - Refill Rate: Every 30 seconds
   - Refill Amount:
       - If you have an ordinary account: 100
-      - If your account has the `known` status: 50 (yes, this being lower than for an ordinary account is correct!)
+      - If your account has the `known` status: 100 (this used to be 50 but [has been fixed](https://github.com/twitchdev/issues/issues/198))
       - If your account has the `verified` status: 7500
   - This bucket is per twitch-user.
 
