@@ -167,6 +167,6 @@ i.e. it responds to you with the `PONG` command and the IRC message arguments `[
       
     - Harder shadowban version:
     
-      Happens when user triggers Twitch undocumented internal filters. In this case user also cannot send whispers. Can be bypassed if user is a mod or a broadcaster.
+      Happens when user triggers Twitch undocumented internal filters and gets banned. In this case user also cannot send whispers. Can be bypassed if user is a mod or a broadcaster.
 
 Note that in general that all messages that are dropped internally due to any of these filters still consume from the `privmsg-xxx-bucket`s.
