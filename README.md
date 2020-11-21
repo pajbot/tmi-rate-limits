@@ -163,7 +163,7 @@ i.e. it responds to you with the `PONG` command and the IRC message arguments `[
   
     - Softer shadowban version:
       
-      Happens when user that has elevated (more than ordinary) rate limits posts too many messages, can last from hour to multiple days <sup>[citation needed]</sup>. Can be bypassed if user is sub, VIP, mod or broadcaster.
+      Happens when user posts too many messages, lasts 30 minutes (https://dev.twitch.tv/docs/irc/guide#command--message-limits). Can be bypassed if user is sub, VIP, mod or broadcaster.
       
     - Harder shadowban version:
     
