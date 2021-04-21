@@ -158,5 +158,15 @@ i.e. it responds to you with the `PONG` command and the IRC message arguments `[
     Permanent ban:
     
         @room-id=40286300;target-user-id=254911995;tmi-sent-ts=1550594146099 :tmi.twitch.tv CLEARCHAT #randers00 :randers01
+        
+  - Shadowbans: Entire IP or account can be shadowbanned globally. In this case user is able to connect and join normally, but all of his messages are dropped.
+  
+    - Softer shadowban version:
+      
+      Happens when user posts too many messages, lasts 30 minutes (https://dev.twitch.tv/docs/irc/guide#command--message-limits). Can be bypassed if user is sub, VIP, mod or broadcaster.
+      
+    - Harder shadowban version:
+    
+      Happens when user triggers Twitch undocumented internal filters and gets banned. In this case user also cannot send whispers. Can be bypassed if user is a mod or a broadcaster.
 
 Note that in general that all messages that are dropped internally due to any of these filters still consume from the `privmsg-xxx-bucket`s.
